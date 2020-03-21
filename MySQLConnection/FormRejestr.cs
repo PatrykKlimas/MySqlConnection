@@ -15,7 +15,7 @@ namespace MySQLConnection
     public partial class FormRejestr : Form
     {
         private const string MySQLConnection = "datasource=127.0.0.1;port=3306;username=root;password=;database=gralogiczna";
-        private Form1 f1;
+        private LoginForm f1;
 
         public FormRejestr()
         {
@@ -106,7 +106,7 @@ namespace MySQLConnection
             myReader.Close();
             myReader = null;
         }
-        public void SetForm1(Form1 f1)
+        public void SetForm1(LoginForm f1)
         {
             this.f1 = f1;
         }
